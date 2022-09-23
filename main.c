@@ -1,7 +1,5 @@
 /**********************************
 Gal Giladi
-312491616
-Ass02
 **********************************/
 //#define _CRTDBG_MAP_ALLOC
 //#include <crtdbg.h>
@@ -16,7 +14,7 @@ Ass02
 Function Name: isCharRep
 Input: char type as a capital letter or lower 
 Output: int - 1 or 0
-Function Operation: the function returns 1 if the char is given
+Function Operation: the function returns 1 if the given char
 can be represented by seven-segment display, or 0 if it can't.
 ********************************/
 int isCharRep(char character)
@@ -54,12 +52,12 @@ int isCharRep(char character)
 Function Name: isStrRep
 Input: a string (char*)
 Output: int - 1 or 0
-Function Operation: the function returns 1 if the string is given
+Function Operation: the function returns 1 if the given string
 can be represented by seven-segment display, or 0 if it can't.
 ********************************/
 int isStrRep(char* str)
 {
-	/*calls isCharRep fucntion for every char of the string that is given,
+	/*calls isCharRep fucntion for every char of the given string,
 	and checks if all the chars are possible to be represented by the
 	seven-segment display.*/
 	for (int i = 0; str[i] != '\0'; i++)
@@ -78,7 +76,7 @@ int isStrRep(char* str)
 Function Name: isCharacter
 Input: char type as a capital letter or lower, Hex or decimal
 Output: int - 1 or 0
-Function Operation: the function returns 1 if the state is given
+Function Operation: the function returns 1 if the given state
 represents a seven-segment display char, or 0 if it's not.
 ********************************/
 int isCharacter(char state)
@@ -99,7 +97,7 @@ int isCharacter(char state)
 Function Name: isString
 Input: a string (char*) 
 Output: int - 1 or 0
-Function Operation: the function returns 1 if the states are given
+Function Operation: the function returns 1 if the given state
 as a string represent a seven-segment display string, or 0 if it's not.
 ********************************/
 int isString(char* states)
@@ -122,8 +120,8 @@ Function Name: print1inARow
 Input: char void
 Output: void (just printing)
 Function Operation: the function let the user enter as many strings
-as he\she wants to, until entering "*", then the function prints the
-summerize of all of the strings with - 1 if the string is given
+as he\she wants to, until the user enters "*", then the function prints the
+summerize of all of the strings with - 1 if the given string
 can be represented by seven-segment display, or 0 if it can't.
 ********************************/
 void print1inARow()
