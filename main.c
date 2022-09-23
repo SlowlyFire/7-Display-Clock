@@ -145,7 +145,7 @@ void print1inARow()
 	/*now we have a dynamic array of structs, that for each struct we have
 	a dynamic array as well for it's string.
 	now we scanf the string itself for each struct, untill the user enters "*". */
-	printf("Enter a string to see if it's valid\n");
+	printf("Enter a string to see if it's valid, stop by entering *\n");
 	for (int i = 0; i < SIZE * sizeof(String*); i++)
 	{
 		scanf("%s", strings[i].str);
@@ -206,7 +206,7 @@ void print2inARow()
 	/*now we have a dynamic array of structs, that for each struct we have
 	a dynamic array as well for it's states.
 	now we scanf the states itself for each struct, untill the user enters "*". */
-	printf("Enter a string to see if it's valid\n");
+	printf("Enter a string to see if it's valid, stop by entering *\n");
 	for (int i = 0; i < SIZE * sizeof(States*); i++)
 	{
 		scanf("%s", statesArray[i].states);
